@@ -1,18 +1,10 @@
 *{
     background-color: rgb(144, 171, 230);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-p{
-    color: rgb(31, 240, 24);
-    text-align: center;
-    font-size: 30px;
-}
-
 h1{
-    color: rgb(253, 4, 4);
     text-align: center;
-}
-
-.resultado{
-    color: rgb(0, 0, 0);
-    font-size: 25px;
+    font-size: 50px;
+    color: black;
+    margin: 10px;
 }

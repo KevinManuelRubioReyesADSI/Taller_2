@@ -1,39 +1,15 @@
-
-document.querySelector("#mayor").innerHTML="";
-document.querySelector("#menor").innerHTML="";
-document.querySelector("#iguales").innerHTML="";
-
-if (num1>=num2 && num2>=num3){
-    document.querySelector("#mayor").innerHTML= "El numero mayor es:"+num1;
-    if (num2>=num3){
-        document.querySelector("#menor").innerHTML="EL numeor menor es:"+num2;
-    }else{
-        document.querySelector("#menor").innerHTML="El numero menor es:"+num3;
+let elegirFigura = prompt("A que figura le desea calcular el área:" + "\n" +
+    "¿Triangulo o circulo" + "\n" + 
+    "Escribe T para Triangulo" + "\n" +
+    "Escriba C para circulo");
+    if (elegirFigura === "T"){
+        let base = Número (prompt("Ingrese la base del triangulo "));
+        let altura = Número (prompt("Ingrese la altura del triangulo"));
+        let areaTr = base * altura / 2 ;
+        alert ("El area del triangulo es de " + areaTr);
     }
-} else if (num2>num1 && num2>=num3){
-    document.querySelector("#mayor").innerHTML="El numeor mayor es:"+num2;
-    if(num1>num3){
-        document.querySelector("#mayor").innerHTML="El numero mayor es:"+num3;
-    } else{
-        document.querySelector("#menor").innerHTML="El numero menor es:"+num1;
+    else if (elefirfigu == "c"){
+        let radio = Número(prompt("Ingrese el radio del circulo"));
+         areaCir = Math.PI * radio;
+        alert("El area del circulo es de " + areaCir)
     }
-} else if (num3>num1 && num3>=num2){
-    document.querySelector("#mayor").innerHTML="El numero mayor es:" +num3;
-    if(num1>num2){
-        document.querySelector("#mayor").innerHTML="El numero mayor es:"+num2;
-    }else{
-        document.querySelector("#menor").innerHTML="El numero menor es:"+num1
-    }
-}else{
-    document.querySelector("#iguales").innerHTML="Todos los numeros son iguales"+num1
-}
-
-addEventListener("DOMContentLoaded", (e)=>{
-    let cal= document.querySelector('#form');
-    let num1= document.querySelector("#num1").value;
-    let num2= document.querySelector("#num2").value;
-    let num3= document.querySelector("#num3").value;
-    let resultado= mayor(num1, num2, num3);
-    document.querySelector("#res").innerHTML=resultado
-    mayor(num1, num2, num3);
-})
