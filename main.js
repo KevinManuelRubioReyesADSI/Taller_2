@@ -1,8 +1,10 @@
-let temperatura = Número(prompt("Ingrese su temperatura"));
-let presion = Número (prompt("Ingrese su presión"));
-if(temperatura > 200 && presion > 100){
-    alert ("alarma");
+let pago = Número (prompt("Ingrese el dinero que pago el restaurante"));
+si ( pago > 130);{
+    let descuento = pago * 0.15;
+    let pagototal = pago - descuento ;
+    alert ("El restaurante Don Julio recibio un descuento del 15% por compras mayores a $130 mil pesos." + "\n" + "Asi que en total debera pagar: $" + pagototal + "mil pesos") 
 }
-mas{
-    alert("Normal");
+
+{
+    alert("El restaurante Don Julio debe pagar : $" + pago + "mil pesos.");
 }
