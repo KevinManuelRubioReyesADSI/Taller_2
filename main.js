@@ -1,10 +1,27 @@
-let num1 = Number(prompt("Ingrese el primer número"));
-let num2 = Number(prompt("Ingrese el segundo número"));
-    if(num1 > num2){
-        let resta = num2 - num1;
-        alert("Debido a que el numero " + num1 + " es mayor que " + num2 + " se restó y dió un total de: " + resta);
+let A = 0.10;
+let B = 0.15;
+let C = 0.20;
+
+
+let membresia = prompt("Ingrese su categoría de membresía" + "\n" + 
+                        "A, B o C");
+    if(membresia === "A" ){
+        let price = Number(prompt("Ingrese el costo de su helado"));
+        let descu = price * A;
+        let total = price - descu;
+        alert("Por tener membresía tipo A, recibiste un descuento del " + A + "% " + "\n" + 
+              "El precio que tendrás que pagar por tu helado es de: $" + total + " mil pesos");
     }
-    else {
-        alert("No es posible hacer esta operación");
+    else if (membresia === "B"){
+        let price = Number(prompt("Ingrese el costo de su helado"));
+        let descu = price * B;
+        let total = price - descu;
+        alert("Por tener membresía tipo B, recibiste un descuento del " + B + "% " + "\n" + 
+              "El precio que tendrás que pagar por tu helado es de: $" + total + " mil pesos");
     }
- 
+    else if(membresia === "C") {
+        let price = Number(prompt("Ingrese el costo de su helado"));
+        let descu = price * C;
+        let total = price - descu;
+        alert("Por tener membresía tipo C, recibiste un descuento del " + C + "% " + "\n" + "El precio que tendrás que pagar por tu helado es de: $" + total + " mil pesos");
+    }
