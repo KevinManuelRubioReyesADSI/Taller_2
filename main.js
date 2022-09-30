@@ -1,9 +1,10 @@
-let iva = 0.20;
-let productos = 1;
-for(var i = 1; i<= productos; i++){
-    let producto = Number(prompt("ingrese el valor de los 5 productos "));
-    let prodiva = producto * iva;
-    alert("Por sus 5 productos debe pagar éste IVA: $" + prodiva + "mil pesos");
-    let total = prodiva + producto;
-    alert("El monto total a pagar por los 5 productos es de: $" + total + "mil pesos");
+let estudiantes = 5;
+let promedio = 0;
+for(var i = 1; i <= estudiantes; i++) {
+    let name = prompt("Ingrese su nombre estudiante " + i);
+    let apell = prompt("Ingrese su apellido " + name);
+    let edad = prompt("Ingrese su edad  " + name);
+    let nota = Number(prompt("Ingrese su nota " + name ));
+     promedio += nota / estudiantes;
 }
+alert("La nota promedio en la rama de computación es de: " + promedio);
