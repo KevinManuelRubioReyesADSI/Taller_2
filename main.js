@@ -1,10 +1,10 @@
-let estudiantes = 5;
-let promedio = 0;
-for(var i = 1; i <= estudiantes; i++) {
-    let name = prompt("Ingrese su nombre estudiante " + i);
-    let apell = prompt("Ingrese su apellido " + name);
-    let edad = prompt("Ingrese su edad  " + name);
-    let nota = Number(prompt("Ingrese su nota " + name ));
-     promedio += nota / estudiantes;
-}
-alert("La nota promedio en la rama de computación es de: " + promedio);
+let num1 = Number(prompt("Ingrese el primer número"));
+let num2 = Number(prompt("Ingrese el segundo número"));
+    if(num1 > num2){
+        let resta = num2 - num1;
+        alert("Debido a que el numero " + num1 + " es mayor que " + num2 + " se restó y dió un total de: " + resta);
+    }
+    else {
+        alert("No es posible hacer esta operación");
+    }
+ 
