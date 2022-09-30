@@ -1,15 +1,15 @@
-let rol= prompt("Ingresar su rol en la empresa para saber su pago" +"/n" +
-"ingrese P si es empleado de planta" + "\n" + "Ingrese A si es empleado administratico");
-if (rol == "P") {
-    let hortrab = Number(prompt("Ingrese las horas que trabajo"));
-    let hora = 20.000;
-    let sueldo = hortrab * hora;
-    alert( "su sueldo por ser empleado de planta y trabajar " + hortrab + "horas es de: $ " + sueldo + "mil pesos" );
+let x = 0 
+let nums = Number(prompt("Ingrese el total de números"));
+let suma=0;
+let multi = 1;
+for (var i = 0 ; i < nums; i++){
+    let num = Number(prompt("Ingrese un número"));
+    if (num % 2 == 0){
+        suma += num;
+    }
+    else{
+        multi *= num;
+    }
 }
-
-else if (rol == "A"){
-    let hortrab= Number(prompt("Ingrese las horas que trabajo"));
-    let hora = 10.000;
-    let sueldo = hortrab * hora;
-    alert("su sueldo por ser empleado administrativo y trabajar" + hortrab + "horas de : $" + sueldo + "mil pesos");
-}
+alert("La suma de los números pares es de:" + suma);
+alert("La multiplicacion de los números impares es de:" + multi);
